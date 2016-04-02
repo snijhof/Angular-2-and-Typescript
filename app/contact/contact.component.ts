@@ -2,10 +2,10 @@ import { Component, OnDestroy, OnInit } from 'angular2/core';
 import { Router } from 'angular2/router';
 
 @Component({
-    selector: 'bloggin-dashboard',
-    templateUrl: 'app/dashboard/dashboard.component.html',
-    styleUrls: ['app/dashboard/dashboard.component.css']
+    selector: 'contact',
+    templateUrl: 'app/contact/contact.component.html',
+    styleUrls: ['app/contact/contact.component.css']
 })
 
-export class DashboardComponent {
+export class ContactComponent {
 }

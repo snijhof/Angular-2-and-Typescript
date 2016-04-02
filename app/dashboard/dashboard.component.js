@@ -23,7 +23,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 DashboardComponent = __decorate([
                     core_1.Component({
-                        selector: 'bloggin-dashboard',
+                        selector: 'dashboard',
                         templateUrl: 'app/dashboard/dashboard.component.html',
                         styleUrls: ['app/dashboard/dashboard.component.css']
                     }), 
