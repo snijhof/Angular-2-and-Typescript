@@ -1,18 +1,64 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-        <script src="node_modules/angular2/bundles/router.dev.js"></script>
-        <script src="node_modules/angular2/bundles/http.dev.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <!-- Angular 2 -->
+        <script src="https://code.angularjs.org/2.0.0-beta.13/angular2-polyfills.js"></script>
+        <script src="https://code.angularjs.org/tools/system.js"></script>
+        <script src="https://npmcdn.com/typescript@1.8.9/lib/typescript.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.13/Rx.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.13/angular2.dev.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.13/router.dev.js"></script>
         <script>
-            // System.config({ packages: {
-            //     api: { format: 'register', defaultExtension: 'js' },
-            //     api: { format: 'register', defaultExtension: 'js' }
-            // }});
+            System.config({
+                transpiler: 'typescript', 
+                typescriptOptions: { emitDecoratorMetadata: true }, 
+                packages: {'app': {defaultExtension: 'ts'}} 
+            });
             System.import('app/main')
                 .then(null, console.error.bind(console));
         </script>
+        
     </head>
     <body>
-        <bloggin-app></bloggin-app>
+        <header>
+        </header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Navigation title -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="dashboard">Blogging</a>
+                </div>
+                
+                <!-- Navigation items -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- Left -->
+                    <ul class="nav navbar-nav">
+                    </ul>
+                
+                    <!-- Right -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="about">About Me<span class="sr-only">(current)</span></a></li>
+                        <li><a href="contact">Contact<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <bloggin-app>Loading..</bloggin-app>
+        </div>
+        <footer>
+        </footer>
     </body>
 </html>

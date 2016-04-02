@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx', './dashboard/dashboard.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.component', './about/about.component', './contact/contact.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,22 +10,24 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, router_1, dashboard_component_1;
+    var core_1, router_1, dashboard_component_1, about_component_1, contact_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (http_1_1) {
-                http_1 = http_1_1;
-            },
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (_1) {},
             function (dashboard_component_1_1) {
                 dashboard_component_1 = dashboard_component_1_1;
+            },
+            function (about_component_1_1) {
+                about_component_1 = about_component_1_1;
+            },
+            function (contact_component_1_1) {
+                contact_component_1 = contact_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -38,12 +40,28 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                         styleUrls: ['app/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
-                            http_1.HTTP_PROVIDERS,
                             router_1.ROUTER_PROVIDERS
                         ]
                     }),
                     router_1.RouteConfig([
-                        { path: '/dashboard', name: 'Dashboard', component: dashboard_component_1.DashboardComponent, useAsDefault: true }
+                        {
+                            path: '/dashboard',
+                            name: 'Dashboard',
+                            component: dashboard_component_1.DashboardComponent,
+                            useAsDefault: true
+                        },
+                        {
+                            path: '/about',
+                            name: 'About',
+                            component: about_component_1.AboutComponent,
+                            useAsDefault: true
+                        },
+                        {
+                            path: '/contact',
+                            name: 'Contact',
+                            component: contact_component_1.ContactComponent,
+                            useAsDefault: true
+                        },
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

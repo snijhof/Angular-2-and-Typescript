@@ -11,9 +11,7 @@ System.register(['angular2/platform/browser', './app.component'], function(expor
                 app_component_1 = app_component_1_1;
             }],
         execute: function() {
-            browser_1.bootstrap(app_component_1.AppComponent, [])
-                .then(function (succes) { return console.log('Bootstrap succes'); })
-                .catch(function (error) { return console.log(error); });
+            browser_1.bootstrap(app_component_1.AppComponent);
         }
     }
 });
