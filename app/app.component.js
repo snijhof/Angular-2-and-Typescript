@@ -54,13 +54,11 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
                             path: '/about',
                             name: 'About',
                             component: about_component_1.AboutComponent,
-                            useAsDefault: true
                         },
                         {
                             path: '/contact',
                             name: 'Contact',
                             component: contact_component_1.ContactComponent,
-                            useAsDefault: true
                         },
                     ]), 
                     __metadata('design:paramtypes', [])

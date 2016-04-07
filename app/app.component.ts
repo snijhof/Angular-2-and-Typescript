@@ -27,13 +27,11 @@ import { ContactComponent } from './contact/contact.component';
     path: '/about',
     name: 'About',
     component: AboutComponent,
-    useAsDefault: true
   },
   {
     path: '/contact',
     name: 'Contact',
     component: ContactComponent,
-    useAsDefault: true
   },
 ])
 
