@@ -16,6 +16,9 @@ export class BlogItem {
 })
 
 export class DashboardComponent {
+    
+    constructor(private _router: Router) { }
+    
     selectedBlogItem: BlogItem;
     blogItems: BlogItem[] = [
         { "id": 1, "title": "Blog Title 1", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
@@ -37,7 +40,6 @@ export class DashboardComponent {
     ];
     
     onSelect(blogItem: BlogItem) { 
-        this.selectedBlogItem = blogItem; 
-        console.log(blogItem);
+        this._router.navigate(['BlogDetail', {id: blogItem.id}]);
     }
 }

@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, router_1;
     var BlogItem, DashboardComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             BlogItem = (function () {
@@ -25,7 +28,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             }());
             exports_1("BlogItem", BlogItem);
             DashboardComponent = (function () {
-                function DashboardComponent() {
+                function DashboardComponent(_router) {
+                    this._router = _router;
                     this.blogItems = [
                         { "id": 1, "title": "Blog Title 1", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
                         { "id": 2, "title": "Blog Title 2", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
@@ -46,8 +50,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     ];
                 }
                 DashboardComponent.prototype.onSelect = function (blogItem) {
-                    this.selectedBlogItem = blogItem;
-                    console.log(blogItem);
+                    this._router.navigate(['BlogDetail', { id: blogItem.id }]);
                 };
                 DashboardComponent = __decorate([
                     core_1.Component({
@@ -55,7 +58,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         templateUrl: 'app/dashboard/dashboard.component.html',
                         styleUrls: ['app/dashboard/dashboard.component.css']
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [router_1.Router])
                 ], DashboardComponent);
                 return DashboardComponent;
             }());
