@@ -1,1 +1,6 @@
-<a href="#">Test</a>
+<ul class="blog-list" *ngFor="#blog of blogItems">
+    <div class="blog-container" (click)="onSelect(blog)">
+        <h2>{{blog.title}}</h2>
+        <article>{{blog.text}}</article>
+    </div>
+</ul>

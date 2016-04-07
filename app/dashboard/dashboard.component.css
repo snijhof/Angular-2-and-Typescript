@@ -1,0 +1,28 @@
+ul.blog-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-container {
+    
+    padding: 12px;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    margin: 12px;
+    color: white;
+    
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.blog-container h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-container:hover {
+    background-color: #0080ff;
+    color: whitesmoke;cursor: hand;
+    cursor: pointer;
+}
