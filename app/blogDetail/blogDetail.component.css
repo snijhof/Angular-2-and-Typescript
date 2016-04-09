@@ -1,0 +1,16 @@
+header h1.blog-title {
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+}
+
+header i.article-info {
+    
+}
+
+header a.author-link, a.comments-link {
+    cursor: pointer;
+    color: dodgerblue;
+    font-weight: bold;
+    text-decoration: none;
+}

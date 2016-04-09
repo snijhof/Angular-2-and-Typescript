@@ -1,1 +1,11 @@
-BlogId: {{id}}
+<div id="blog-detail">
+    <header>
+        <h1 class="blog-title">{{blog.title}}</h1>
+        <i class="article-info">
+            Posted by <a class="author-link">{{blog.author}}</a> on {{blog.publication | date:'ddMMy'}} | <a class="comments-link">5 comments</a>
+        </i>
+    </header>
+    <article>
+        {{blog.text}}
+    </article>
+</div>
