@@ -1,11 +1,15 @@
-<div id="blog-detail">
+<div id="blog-detail" class="col-md-8 col-md-offset-2">
     <header>
         <h1 class="blog-title">{{blog.title}}</h1>
-        <i class="article-info">
+        <p class="article-info">
             Posted by <a class="author-link">{{blog.author}}</a> on {{blog.publication | date:'ddMMy'}} | <a class="comments-link">5 comments</a>
-        </i>
+        </p>
     </header>
     <article>
         {{blog.text}}
     </article>
+    <footer>
+        <button class="btn"><span class="glyphicon glyphicon-ok"></span></button>
+        <button class="btn"><span class="glyphicon glyphicon-ok"></span></button>
+    </footer>
 </div>

@@ -1,11 +1,15 @@
 header h1.blog-title {
-    font-style: italic;
+    /*font-style: italic;*/
     padding: 0px;
     margin: 0px;
+    font-family: 'Poiret One';
+    font-size: 42px;
 }
 
-header i.article-info {
-    
+header p.article-info {
+    margin-top: 8px;
+    font-family: 'Raleway';
+    font-size: 14px;
 }
 
 header a.author-link, a.comments-link {
@@ -13,4 +17,6 @@ header a.author-link, a.comments-link {
     color: dodgerblue;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 14px;
 }

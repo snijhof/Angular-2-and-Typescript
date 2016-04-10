@@ -26,7 +26,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                     this._router = _router;
                     this._routeParams = _routeParams;
                     this.blogItems = [
-                        { "id": 1, "title": "Blog Title 1", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 1, "title": "Grumpy wizards make toxic brew for the evil Queen and Jack.", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
                         { "id": 2, "title": "Blog Title 2", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
                         { "id": 3, "title": "Blog Title 3", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
                         { "id": 4, "title": "Blog Title 4", "text": "This is the story from this awesome blog post.", "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
