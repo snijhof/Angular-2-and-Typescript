@@ -46,8 +46,23 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                 }
                 BlogDetailComponent.prototype.ngOnInit = function () {
                     var _this = this;
+                    this.likes = 0;
+                    this.shared = 0;
                     this.id = Number(this._routeParams.get('id'));
                     this.blog = this.blogItems.find(function (x) { return x.id === _this.id; });
+                };
+                BlogDetailComponent.prototype.loveBlogPost = function () {
+                    if (this.love) {
+                        this.likes--;
+                        this.love = false;
+                    }
+                    else {
+                        this.likes++;
+                        this.love = true;
+                    }
+                };
+                BlogDetailComponent.prototype.share = function () {
+                    this.shared++;
                 };
                 BlogDetailComponent = __decorate([
                     core_1.Component({

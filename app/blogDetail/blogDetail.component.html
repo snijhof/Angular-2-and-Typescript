@@ -9,7 +9,10 @@
         {{blog.text}}
     </article>
     <footer>
-        <button class="btn"><span class="glyphicon glyphicon-ok"></span></button>
-        <button class="btn"><span class="glyphicon glyphicon-ok"></span></button>
+        <p class="comments-title">Comments</p>
+        <div class="button-container">
+            <button class="btn btn-primary" (click)="share()"><span class="share-counter" *ngIf="shared > 0">{{shared}}</span><span class="glyphicon glyphicon-share"></span></button>
+            <button class="btn btn-danger" (click)="loveBlogPost()"><span class="love-counter" *ngIf="likes > 0">{{likes}}</span><span class="glyphicon glyphicon-heart"></span></button>
+        </div>
     </footer>
 </div>

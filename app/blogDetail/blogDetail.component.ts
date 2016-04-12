@@ -11,14 +11,33 @@ import { BlogItem } from '../dashboard/dashboard.component';
 export class BlogDetailComponent implements OnInit {
     id: number;
     blog: BlogItem;
+    love: boolean;
+    likes: number;
+    shared: number;
     
     constructor(
         private _router:Router,
         private _routeParams:RouteParams) {}
         
     ngOnInit() {
+        this.likes = 0;
+        this.shared = 0;
         this.id = Number(this._routeParams.get('id'));
         this.blog = this.blogItems.find(x => x.id === this.id);
+    }
+    
+    loveBlogPost() {
+        if (this.love) {
+            this.likes--;
+            this.love = false;
+        } else {
+            this.likes++;
+            this.love = true;
+        }
+    }
+    
+    share() {
+        this.shared++;
     }
     
     blogItems: BlogItem[] = [
