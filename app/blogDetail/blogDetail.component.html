@@ -5,8 +5,8 @@
             Posted by <a class="author-link">{{blog.author}}</a> on {{blog.publication | date:'ddMMy'}} | <a class="comments-link">5 comments</a>
         </p>
     </header>
-    <article>
-        {{blog.text}}
+    <article class="blog-article">
+        <p *ngFor="#paragraph of blog.text">{{paragraph}}</p>
     </article>
     <footer>
         <div class="comments-title-container">
