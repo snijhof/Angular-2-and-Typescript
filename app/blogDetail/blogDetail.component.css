@@ -52,13 +52,25 @@ button .share-counter {
     margin: 4px;
 }
 
-#blog-detail footer .comments-title {
-   -webkit-flex: 100 0 0; 
-   flex: 100 0 0;
-   
-   font-family: 'Raleway';
-   font-size: 20px;
-   font-weight: bold;
-   margin: 0px;
-   padding-top: 10px;
+#blog-detail footer .comments-title-container {
+    -webkit-flex: 100 0 0; 
+    flex: 100 0 0;
+}
+
+.comments-title-container .comments-title {
+    float: left;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.comments-title-container .comments-menu-arrow {
+    margin-top: 16px;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: -5px;
+    font-size: 16px;
 }

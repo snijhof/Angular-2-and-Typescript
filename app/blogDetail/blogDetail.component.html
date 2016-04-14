@@ -9,7 +9,11 @@
         {{blog.text}}
     </article>
     <footer>
-        <p class="comments-title">Comments</p>
+        <div class="comments-title-container">
+            <p class="comments-title" (click)="openComments()">Comments</p>
+            <div class="comments-menu-arrow glyphicon glyphicon-menu-down" *ngIf="!commentsOpened"></div>
+            <div class="comments-menu-arrow glyphicon glyphicon-menu-up" *ngIf="commentsOpened"></div>
+        </div>
         <div class="button-container">
             <button class="btn btn-primary" (click)="share()"><span class="share-counter" *ngIf="shared > 0">{{shared}}</span><span class="glyphicon glyphicon-share"></span></button>
             <button class="btn btn-danger" (click)="loveBlogPost()"><span class="love-counter" *ngIf="likes > 0">{{likes}}</span><span class="glyphicon glyphicon-heart"></span></button>
