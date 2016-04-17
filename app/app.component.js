@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.component', './blogDetail/blogDetail.component', './about/about.component', './contact/contact.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.component', './blogDetail/blogDetail.component', './addBlog/addBlog.component', './about/about.component', './contact/contact.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, dashboard_component_1, blogDetail_component_1, about_component_1, contact_component_1;
+    var core_1, router_1, dashboard_component_1, blogDetail_component_1, addBlog_component_1, about_component_1, contact_component_1;
     var AppComponent;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
             },
             function (blogDetail_component_1_1) {
                 blogDetail_component_1 = blogDetail_component_1_1;
+            },
+            function (addBlog_component_1_1) {
+                addBlog_component_1 = addBlog_component_1_1;
             },
             function (about_component_1_1) {
                 about_component_1 = about_component_1_1;
@@ -57,6 +60,11 @@ System.register(['angular2/core', 'angular2/router', './dashboard/dashboard.comp
                             path: '/blog/:id',
                             name: 'BlogDetail',
                             component: blogDetail_component_1.BlogDetailComponent,
+                        },
+                        {
+                            path: '/add',
+                            name: 'AddBlog',
+                            component: addBlog_component_1.AddBlogComponent,
                         },
                         {
                             path: '/about',

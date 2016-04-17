@@ -56,6 +56,9 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                 DashboardComponent.prototype.onSelect = function (blogItem) {
                     this._router.navigate(['BlogDetail', { id: blogItem.id }]);
                 };
+                DashboardComponent.prototype.addBlog = function () {
+                    this._router.navigate(['AddBlog']);
+                };
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'dashboard',

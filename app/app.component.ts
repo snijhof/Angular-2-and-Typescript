@@ -4,6 +4,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BlogDetailComponent } from './blogDetail/blogDetail.component';
+import { AddBlogComponent } from './addBlog/addBlog.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
@@ -28,6 +29,11 @@ import { ContactComponent } from './contact/contact.component';
     path: '/blog/:id',
     name: 'BlogDetail',
     component: BlogDetailComponent,
+  },
+  {
+    path: '/add',
+    name: 'AddBlog',
+    component: AddBlogComponent,
   },
   {
     path: '/about',

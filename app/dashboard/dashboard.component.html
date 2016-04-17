@@ -1,3 +1,4 @@
+<button class="btn btn-success" (click)="addBlog()"><span class="glyphicon glyphicon-plus"></span></button>
 <ul class="blog-list" *ngFor="#blog of blogItems">
     <div class="blog-container" (click)="onSelect(blog)">
         <h2>{{blog.title}}</h2>

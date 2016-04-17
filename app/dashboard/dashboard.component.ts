@@ -46,4 +46,8 @@ export class DashboardComponent {
     onSelect(blogItem: BlogItem) { 
         this._router.navigate(['BlogDetail', {id: blogItem.id}]);
     }
+    
+    addBlog() { 
+        this._router.navigate(['AddBlog']);
+    }
 }
