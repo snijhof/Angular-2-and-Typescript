@@ -34,22 +34,22 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                         "Duis nec mollis arcu, et laoreet tellus. Cras ac elit a libero ultrices gravida sed sed urna. Donec pellentesque auctor faucibus. Ut a facilisis nisi. Vivamus vulputate volutpat tincidunt. Donec ut arcu metus. Nullam cursus metus at leo tincidunt tincidunt. Phasellus blandit ullamcorper lacus."
                     ];
                     this.blogItems = [
-                        { "id": 1, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 2, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 3, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 4, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 5, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 6, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 7, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 8, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 9, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 10, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 11, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 12, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 13, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 14, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 15, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
-                        { "id": 16, "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 1, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 2, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 3, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 4, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 5, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 6, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 7, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 8, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 9, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 10, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 11, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 12, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 13, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 14, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 15, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
+                        { "id": 16, "body": "", "title": this.title, "text": this.text, "author": "Sjoerd Nijhof", "publication": new Date(2016, 4, 7) },
                     ];
                 }
                 BlogDetailComponent.prototype.ngOnInit = function () {
